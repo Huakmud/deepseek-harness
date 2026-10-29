@@ -1,0 +1,17 @@
+# A test-only composition: the speech registry and one cloud recognizer mounted
+# the way a deployment mounts them, so the Loader owns each plugin's namespace
+# rather than a hand-built `ctx.plugin` call. Only the Gemini endpoint is a
+# loopback fixture; the registry and its disposal are the shipped implementations.
+
+- id: speech-to-text
+  name: '@deepseek-ai/dsh-experimental-speech-to-text'
+  config:
+    defaultProvider: gemini-speech
+    language: auto
+
+- id: speech-to-text-gemini
+  name: '@deepseek-ai/dsh-experimental-speech-to-text-gemini'
+  config:
+    baseURL: {{endpoint}}
+    apiKeyEnv: GEMINI_API_KEY
+    model: {{model}}

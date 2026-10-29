@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Team Roster",
+    "description": "Run a roster of specialist subagents, each on its own model, that discuss a plan before working in parallel."
+  }
+}

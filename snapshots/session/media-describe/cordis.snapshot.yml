@@ -1,0 +1,48 @@
+# Keyless replay for the media-describe scenario: the loopback provider stays
+# deterministic and real, and only the model adapter is replaced by replay.
+- id: llm-deepseek
+  name: '@deepseek-ai/dsh-llm-deepseek-api-key'
+  disabled: true
+
+- insert:
+    - id: llm-replay
+      name: '@deepseek-ai/dsh-llm-replay'
+      config:
+        providers:
+          - id: deepseek-official
+            name: DeepSeek
+            models:
+              - id: deepseek-v4-flash
+                inputModalities: [text]
+
+    - id: media-fixture
+      name: './media-fixture-server.mjs'
+
+- id: media
+  name: '@deepseek-ai/dsh-media'
+
+- id: media-openai
+  disabled: true
+
+- id: media-gemini
+  disabled: true
+
+- id: tool-media
+  name: '@deepseek-ai/dsh-tool-media'
+  config:
+    generate: false
+    transcribe: false
+
+- id: attachment-local
+  name: '@deepseek-ai/dsh-attachment-local'
+
+# The catalog enumerates skills on the host running the snapshot, so its text
+# differs between machines; this scenario is about the media tool result only.
+- id: skill
+  disabled: true
+
+- id: skill-filesystem
+  disabled: true
+
+- id: tool-skill
+  disabled: true

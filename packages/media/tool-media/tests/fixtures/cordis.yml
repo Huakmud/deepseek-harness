@@ -1,0 +1,45 @@
+# A test-only composition: the media seam, one provider, and the three tools
+# mounted the way a deployment mounts them, so the Loader owns each plugin's
+# namespace rather than a hand-built `ctx.plugin` call. Only the external media
+# endpoint is a loopback fixture; the Session, attachment store, filesystem, tool
+# registry, and prompt sections are the real implementations.
+
+- id: system-prompt
+  name: '@deepseek-ai/dsh-system-prompt'
+
+- id: tools
+  name: '@deepseek-ai/dsh-tools'
+  config:
+    mode: native
+
+- id: fs
+  name: '@deepseek-ai/dsh-fs-local'
+  config:
+    cwd: {{workspace}}
+
+- id: working-directory
+  name: '@deepseek-ai/dsh-working-directory'
+  config:
+    defaultDirectory: {{workspace}}
+
+- id: attachments
+  name: '@deepseek-ai/dsh-attachment-local'
+  config:
+    dshHome: {{home}}
+
+- id: media
+  name: '@deepseek-ai/dsh-media'
+  config:
+    mediaProvider: openai-compatible
+
+- id: media-openai
+  name: '@deepseek-ai/dsh-media-openai'
+  config:
+    baseURL: {{endpoint}}
+    apiKeyEnv: OPENAI_API_KEY
+    describeModel: {{describeModel}}
+    generateModel: {{generateModel}}
+    transcribeModel: {{transcribeModel}}
+
+- id: tool-media
+  name: '@deepseek-ai/dsh-tool-media'

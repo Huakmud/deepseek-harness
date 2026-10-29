@@ -1,0 +1,46 @@
+# Media-describe composition for the headless snapshot corpus. The base bundle
+# mounts the media seam and both provider adapters; this overlay replaces the
+# adapters with one deterministic loopback provider and adds the tool consumer
+# plus the attachment store the describe tool reads through.
+#
+# The routed model is text-only on purpose: that is the deployment the seam
+# exists for, and it is what makes media_describe_image the only way the model
+# can learn what the attached image contains.
+- id: llm-deepseek
+  name: '@deepseek-ai/dsh-llm-deepseek-api-key'
+  config:
+    models:
+      - id: deepseek-v4-flash
+
+- insert:
+    - id: media-fixture
+      name: './media-fixture-server.mjs'
+
+- id: media
+  name: '@deepseek-ai/dsh-media'
+
+- id: media-openai
+  disabled: true
+
+- id: media-gemini
+  disabled: true
+
+- id: tool-media
+  name: '@deepseek-ai/dsh-tool-media'
+  config:
+    generate: false
+    transcribe: false
+
+- id: attachment-local
+  name: '@deepseek-ai/dsh-attachment-local'
+
+# The catalog enumerates skills on the host running the snapshot, so its text
+# differs between machines; this scenario is about the media tool result only.
+- id: skill
+  disabled: true
+
+- id: skill-filesystem
+  disabled: true
+
+- id: tool-skill
+  disabled: true

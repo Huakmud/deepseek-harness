@@ -1,0 +1,40 @@
+# Bilingual-pair consistency record for README.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write packages/client/ui-team-roster/README.md
+/:
+  en: c8127af9460fd7dd
+  zh: 6bfb3bf727fee446
+/deepseek-ai-dsh-client-ui-team-roster:
+  en: 01730f01b08540f0
+  zh: 594c2db98de31355
+/deepseek-ai-dsh-client-ui-team-roster/summary:
+  en: e327e18ffacff4e1
+  zh: d40eb12fa43c9b53
+/deepseek-ai-dsh-client-ui-team-roster/table-of-contents:
+  en: d152484eb41ac6b4
+  zh: d634cd775907bb7f
+/deepseek-ai-dsh-client-ui-team-roster/use-this-package:
+  en: 0e030995254ca5be
+  zh: 1d37a5f4be96677b
+/deepseek-ai-dsh-client-ui-team-roster/use-this-package/limits:
+  en: 8283cfaedf6547db
+  zh: 88247e969c22c0c3
+/deepseek-ai-dsh-client-ui-team-roster/understand-the-implementation:
+  en: b86e21c703f1fe96
+  zh: bb07419ca27bae5f
+/deepseek-ai-dsh-client-ui-team-roster/further-exploration:
+  en: af57f29fa592af46
+  zh: 6bc8420a1d52f5fe
+/deepseek-ai-dsh-client-ui-team-roster/model-experience:
+  en: fa888c5dac5c04a7
+  zh: fa888c5dac5c04a7
+/deepseek-ai-dsh-client-ui-team-roster/model-experience/kv-cache-effect:
+  en: eacb3b78e07d6ddf
+  zh: eacb3b78e07d6ddf
+/deepseek-ai-dsh-client-ui-team-roster/known-limitations-and-deferred-work:
+  en: 51e207e3a1595f44
+  zh: 6449669b3c6ce3ab
+/deepseek-ai-dsh-client-ui-team-roster/known-limitations-and-deferred-work/dev-note:
+  en: 0225ba087c5266f3
+  zh: 676e5535d828f219

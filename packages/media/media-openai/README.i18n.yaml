@@ -1,0 +1,49 @@
+# Bilingual-pair consistency record for README.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write packages/media/media-openai/README.md
+/:
+  en: 8565b6dfaca38810
+  zh: 94b682703b6e4abb
+/deepseek-ai-dsh-media-openai:
+  en: 2b1b9b36477ba3e1
+  zh: 64ed2c4b04971600
+/deepseek-ai-dsh-media-openai/summary:
+  en: 22ba3d71f785d5d3
+  zh: 71d65069e4ac039d
+/deepseek-ai-dsh-media-openai/table-of-contents:
+  en: d152484eb41ac6b4
+  zh: 09388d293f9be9cb
+/deepseek-ai-dsh-media-openai/use-this-package:
+  en: 4e0d7a011639333b
+  zh: c7026ac136ff2220
+/deepseek-ai-dsh-media-openai/use-this-package/when-to-choose-it:
+  en: bd04e73b9135a470
+  zh: 99bd4078f7eeb4e7
+/deepseek-ai-dsh-media-openai/use-this-package/configuration:
+  en: e9c601b2b64958a8
+  zh: 35693501dcc89b59
+/deepseek-ai-dsh-media-openai/use-this-package/endpoints:
+  en: 411ff827f9948677
+  zh: 660570cb0ab08a85
+/deepseek-ai-dsh-media-openai/understand-the-implementation:
+  en: 8dce8a3ab109d1e4
+  zh: dbec9f4b2dde988f
+/deepseek-ai-dsh-media-openai/further-exploration:
+  en: 820f72915be8a431
+  zh: 4c798006c05d95fa
+/deepseek-ai-dsh-media-openai/model-experience:
+  en: efb0a0a5319ae90d
+  zh: 0b2deef03ae54ce4
+/deepseek-ai-dsh-media-openai/model-experience/kv-cache-effect:
+  en: 30d697ddbe8bf861
+  zh: 93b0a6aaabb879f6
+/deepseek-ai-dsh-media-openai/known-limitations-and-deferred-work:
+  en: ed0d33405ad6b69f
+  zh: 63996624ddff8649
+/deepseek-ai-dsh-media-openai/known-limitations-and-deferred-work/dev-note:
+  en: 64ee46559b704be8
+  zh: 739ce620a590f364
+/deepseek-ai-dsh-media-openai/known-limitations-and-deferred-work/dev-note/future-provider-specific-response-dialects:
+  en: 6430f74394fc5a91
+  zh: b93d5ae1f2c703f3

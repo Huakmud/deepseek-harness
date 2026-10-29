@@ -1,0 +1,43 @@
+# Bilingual-pair consistency record for README.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write packages/experimental/team-roster/README.md
+/:
+  en: 55d3c0b0504acdda
+  zh: c02fc720acabdd5e
+/deepseek-ai-dsh-experimental-team-roster:
+  en: 46275339d7234ae9
+  zh: 02d252c480dfcc75
+/deepseek-ai-dsh-experimental-team-roster/summary:
+  en: 572c0b0cf37705d2
+  zh: 2cf945bfa1568f7a
+/deepseek-ai-dsh-experimental-team-roster/table-of-contents:
+  en: d152484eb41ac6b4
+  zh: b6c1f70f24286d97
+/deepseek-ai-dsh-experimental-team-roster/use-this-package:
+  en: afcf5c2b97fe1680
+  zh: 65308be7b3fc495e
+/deepseek-ai-dsh-experimental-team-roster/use-this-package/when-to-choose-it:
+  en: 642d4e2eb2f608e4
+  zh: 7b9e6fec8febc801
+/deepseek-ai-dsh-experimental-team-roster/use-this-package/limits:
+  en: beab1a045e8e064c
+  zh: 29542e7be4e1cd5f
+/deepseek-ai-dsh-experimental-team-roster/understand-the-implementation:
+  en: 634dc26a2f8c15fc
+  zh: d7daf5e6b4da5a51
+/deepseek-ai-dsh-experimental-team-roster/further-exploration:
+  en: 5f5cc1d748217fe2
+  zh: 6e012ad3646b54ac
+/deepseek-ai-dsh-experimental-team-roster/model-experience:
+  en: bb4d03505feb452d
+  zh: 64621b2d1360eaab
+/deepseek-ai-dsh-experimental-team-roster/model-experience/kv-cache-effect:
+  en: 94ff4e3cb588768b
+  zh: e22400d52ac8b9f3
+/deepseek-ai-dsh-experimental-team-roster/known-limitations-and-deferred-work:
+  en: 25294b2188b6306e
+  zh: 292d7a99c37c7317
+/deepseek-ai-dsh-experimental-team-roster/known-limitations-and-deferred-work/dev-note:
+  en: 0225ba087c5266f3
+  zh: 676e5535d828f219

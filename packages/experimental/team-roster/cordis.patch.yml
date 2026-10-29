@@ -1,0 +1,8 @@
+# Multi-model team roster: one optional bundle row that installs the
+# `team_discuss` and `team_execute` tools, plus the Plugins-page card that edits
+# this row's `agents` configuration.
+- insert:
+    - id: team-roster
+      name: '@deepseek-ai/dsh-experimental-team-roster'
+    - id: ui-team-roster
+      name: '@deepseek-ai/dsh-client-ui-team-roster'

@@ -1,0 +1,55 @@
+# Bilingual-pair consistency record for README.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write packages/media/media/README.md
+/:
+  en: 3f5d09738cc011b0
+  zh: 5611248aba2ce236
+/deepseek-ai-dsh-media:
+  en: 07de4b689b29a96c
+  zh: c6322ca10a7c5164
+/deepseek-ai-dsh-media/summary:
+  en: fcf0a04d1cbd0f92
+  zh: 542df8ba1c7ffc7c
+/deepseek-ai-dsh-media/table-of-contents:
+  en: d152484eb41ac6b4
+  zh: 09388d293f9be9cb
+/deepseek-ai-dsh-media/use-this-package:
+  en: e2c5a831ba540777
+  zh: ea5caee5e2802230
+/deepseek-ai-dsh-media/use-this-package/when-to-choose-it:
+  en: 255a734898bc3ca7
+  zh: 17f1b46c52db79c7
+/deepseek-ai-dsh-media/use-this-package/configuration:
+  en: e72d0df6c6babd1c
+  zh: 23186d38b910712c
+/deepseek-ai-dsh-media/use-this-package/operations:
+  en: 112bc90740c5a8b4
+  zh: 7bcc42b9549e82cc
+/deepseek-ai-dsh-media/understand-the-implementation:
+  en: 9313dfd3059b0080
+  zh: 3909dfd6b8b611cb
+/deepseek-ai-dsh-media/understand-the-implementation/selection-outcomes:
+  en: 410a4f65ae77cba0
+  zh: b20766bd9184d7ce
+/deepseek-ai-dsh-media/understand-the-implementation/events:
+  en: d9b773269faad1a1
+  zh: c493ec94885d998f
+/deepseek-ai-dsh-media/further-exploration:
+  en: 42d78cd928cbe099
+  zh: 9bca2cf7b454ee21
+/deepseek-ai-dsh-media/model-experience:
+  en: be6b84739b0eab94
+  zh: 47f0a3bcd33d14a6
+/deepseek-ai-dsh-media/model-experience/kv-cache-effect:
+  en: 2dabbc4d9dec29a2
+  zh: 327657d54245710f
+/deepseek-ai-dsh-media/known-limitations-and-deferred-work:
+  en: 65bbc166b7db0970
+  zh: 7b7a5d9b8a2b2a21
+/deepseek-ai-dsh-media/known-limitations-and-deferred-work/dev-note:
+  en: 64ee46559b704be8
+  zh: 739ce620a590f364
+/deepseek-ai-dsh-media/known-limitations-and-deferred-work/dev-note/future-per-operation-provider-routing:
+  en: 4e04af5da033fd79
+  zh: bb6431d68e2ef359

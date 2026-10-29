@@ -1,0 +1,85 @@
+# Bilingual-pair consistency record for README.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write packages/media/tool-media/README.md
+/:
+  en: ccefd00db9a55187
+  zh: e42f1049e18d9500
+/deepseek-ai-dsh-tool-media:
+  en: d42f61f7db50165d
+  zh: 959d6ae35e70424f
+/deepseek-ai-dsh-tool-media/summary:
+  en: 2ac0101e1aa188be
+  zh: ed8ea23cc271aebc
+/deepseek-ai-dsh-tool-media/table-of-contents:
+  en: d152484eb41ac6b4
+  zh: 09388d293f9be9cb
+/deepseek-ai-dsh-tool-media/use-this-package:
+  en: 99564708b3c87d4e
+  zh: 184a2fc68323c829
+/deepseek-ai-dsh-tool-media/use-this-package/when-to-choose-it:
+  en: 16740d8c35fa3104
+  zh: 759c770376b7ff7b
+/deepseek-ai-dsh-tool-media/use-this-package/configuration:
+  en: a4392907aaf8ba14
+  zh: 701b58974a33e2f4
+/deepseek-ai-dsh-tool-media/understand-the-implementation:
+  en: ee4615a04fa6503d
+  zh: ee2c5fb2204a43cf
+/deepseek-ai-dsh-tool-media/understand-the-implementation/naming-an-image:
+  en: a6e0c3fa03e7743f
+  zh: b5ea1c540667362b
+/deepseek-ai-dsh-tool-media/understand-the-implementation/committing-a-generated-image:
+  en: 1575416b73ebf207
+  zh: 2f480a7f38c11957
+/deepseek-ai-dsh-tool-media/understand-the-implementation/registration-and-the-settings-page:
+  en: 6f7762c64c4cc418
+  zh: f18a8e573d6c5c71
+/deepseek-ai-dsh-tool-media/further-exploration:
+  en: 28f21aaa54e5e506
+  zh: d21bab5cfe0da299
+/deepseek-ai-dsh-tool-media/model-experience:
+  en: 215e7ba838619b7b
+  zh: a311da3843709f90
+/deepseek-ai-dsh-tool-media/model-experience/the-three-media-tools:
+  en: 513b2c4be6e2af0e
+  zh: 08e5659f4b3562b1
+/deepseek-ai-dsh-tool-media/model-experience/the-three-media-tools/what-the-model-sees:
+  en: d19fba240ee31419
+  zh: d19fba240ee31419
+/deepseek-ai-dsh-tool-media/model-experience/the-three-media-tools/token-effect:
+  en: 054e583216ec4f70
+  zh: 054e583216ec4f70
+/deepseek-ai-dsh-tool-media/model-experience/the-three-media-tools/kv-cache-effect:
+  en: 35e87c9611f1bc70
+  zh: 35e87c9611f1bc70
+/deepseek-ai-dsh-tool-media/model-experience/media-guidance-in-the-system-prompt:
+  en: a8610334c0136024
+  zh: 051a46f63c01d511
+/deepseek-ai-dsh-tool-media/model-experience/media-guidance-in-the-system-prompt/what-the-model-sees:
+  en: eb607c3f995bcbb3
+  zh: eb607c3f995bcbb3
+/deepseek-ai-dsh-tool-media/model-experience/media-guidance-in-the-system-prompt/what-the-model-sees/verbatim-text-for-media-describe-image:
+  en: f6b8da762d2ea42c
+  zh: f6b8da762d2ea42c
+/deepseek-ai-dsh-tool-media/model-experience/media-guidance-in-the-system-prompt/what-the-model-sees/verbatim-text-for-media-generate-image:
+  en: 04792bc37310b085
+  zh: 04792bc37310b085
+/deepseek-ai-dsh-tool-media/model-experience/media-guidance-in-the-system-prompt/what-the-model-sees/verbatim-text-for-media-transcribe-audio:
+  en: ebde2192af166193
+  zh: ebde2192af166193
+/deepseek-ai-dsh-tool-media/model-experience/media-guidance-in-the-system-prompt/token-effect:
+  en: 4ab0801d5521f1aa
+  zh: 4ab0801d5521f1aa
+/deepseek-ai-dsh-tool-media/model-experience/media-guidance-in-the-system-prompt/kv-cache-effect:
+  en: e28c2a954abe08e7
+  zh: d3faa7359e7901c5
+/deepseek-ai-dsh-tool-media/known-limitations-and-deferred-work:
+  en: 0c0a0d13997a3963
+  zh: 9295e4cec9700756
+/deepseek-ai-dsh-tool-media/known-limitations-and-deferred-work/dev-note:
+  en: 64ee46559b704be8
+  zh: 739ce620a590f364
+/deepseek-ai-dsh-tool-media/known-limitations-and-deferred-work/dev-note/future-recovering-the-image-reference-without-the-session-log:
+  en: e64643850fcbc1a1
+  zh: 1142c5be157a4804

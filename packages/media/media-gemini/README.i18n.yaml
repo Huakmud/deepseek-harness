@@ -1,0 +1,49 @@
+# Bilingual-pair consistency record for README.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write packages/media/media-gemini/README.md
+/:
+  en: ff0060e38ee4a4d5
+  zh: de2e77fd517744fa
+/deepseek-ai-dsh-media-gemini:
+  en: 54c56ef3d16b56bc
+  zh: d664fade72190634
+/deepseek-ai-dsh-media-gemini/summary:
+  en: 3383b9e85cf213aa
+  zh: 8b6e9903501992d3
+/deepseek-ai-dsh-media-gemini/table-of-contents:
+  en: d152484eb41ac6b4
+  zh: 09388d293f9be9cb
+/deepseek-ai-dsh-media-gemini/use-this-package:
+  en: 6314ffd9abd8e0ee
+  zh: 16f70a15e5b48ad9
+/deepseek-ai-dsh-media-gemini/use-this-package/when-to-choose-it:
+  en: f489493ea1f2e9e5
+  zh: 76255c61459f4608
+/deepseek-ai-dsh-media-gemini/use-this-package/configuration:
+  en: 80a2d65c53636dc7
+  zh: f76e613ab0dc53fb
+/deepseek-ai-dsh-media-gemini/understand-the-implementation:
+  en: 73c9cb04a04eaa44
+  zh: 573191a137a5858f
+/deepseek-ai-dsh-media-gemini/understand-the-implementation/aspect-ratio-mapping:
+  en: 3648ced68a4fc964
+  zh: 271bb8ca810b9afd
+/deepseek-ai-dsh-media-gemini/further-exploration:
+  en: 820f72915be8a431
+  zh: 4c798006c05d95fa
+/deepseek-ai-dsh-media-gemini/model-experience:
+  en: efb0a0a5319ae90d
+  zh: 0b2deef03ae54ce4
+/deepseek-ai-dsh-media-gemini/model-experience/kv-cache-effect:
+  en: 30d697ddbe8bf861
+  zh: 93b0a6aaabb879f6
+/deepseek-ai-dsh-media-gemini/known-limitations-and-deferred-work:
+  en: 4a71428677c309ad
+  zh: d56c4bf2e9a86def
+/deepseek-ai-dsh-media-gemini/known-limitations-and-deferred-work/dev-note:
+  en: 64ee46559b704be8
+  zh: 739ce620a590f364
+/deepseek-ai-dsh-media-gemini/known-limitations-and-deferred-work/dev-note/future-an-aspect-ratio-argument-rather-than-a-parsed-size:
+  en: b22e1441dc0b9ae3
+  zh: 1dd8ae0cd81988dd

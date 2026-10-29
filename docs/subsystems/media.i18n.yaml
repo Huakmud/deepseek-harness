@@ -1,0 +1,31 @@
+# Bilingual-pair consistency record for media.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write docs/subsystems/media.md
+/media-access:
+  en: 85e5e5f3296f2516
+  zh: 60168a80da26c079
+/media-access/the-delegation-model:
+  en: 4d5729361ad924f8
+  zh: 79ad5f0ec3800459
+/media-access/why-one-capability-has-three-operations:
+  en: fe4230ca666507ba
+  zh: 0ff8f21f266eb2e3
+/media-access/selecting-a-provider:
+  en: d1719994c480c5a1
+  zh: a5680a5c3e332732
+/media-access/the-two-provider-adapters:
+  en: 2c53c7de14c77aad
+  zh: 4524fe086b7a1934
+/media-access/where-the-image-gate-loosens:
+  en: c31f98b22cb7ecf0
+  zh: 68d62daaacd79353
+/media-access/configuration-surfaces:
+  en: c51fbf5ab818b785
+  zh: 37a11387a2cea114
+/media-access/testing-this-seam:
+  en: 24fda98303eec4ec
+  zh: 34ef533cbd538d5a
+/media-access/further-reading:
+  en: cf16600375900465
+  zh: 00df7622d7f9eff7

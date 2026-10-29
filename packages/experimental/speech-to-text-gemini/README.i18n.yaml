@@ -1,0 +1,34 @@
+# Bilingual-pair consistency record for README.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write packages/experimental/speech-to-text-gemini/README.md
+/:
+  en: 4ebd8b8737b45bb4
+  zh: dd94f61e36c01389
+/deepseek-ai-dsh-experimental-speech-to-text-gemini:
+  en: 3581c99ccac9a29d
+  zh: 8680481f3d01e621
+/deepseek-ai-dsh-experimental-speech-to-text-gemini/summary:
+  en: e87c4e0d49733d0d
+  zh: 165d4a40a50ab318
+/deepseek-ai-dsh-experimental-speech-to-text-gemini/table-of-contents:
+  en: d152484eb41ac6b4
+  zh: 88709d3931919920
+/deepseek-ai-dsh-experimental-speech-to-text-gemini/use-this-package:
+  en: 63c0a3e68fecf18c
+  zh: e04e60e5a5098882
+/deepseek-ai-dsh-experimental-speech-to-text-gemini/understand-the-implementation:
+  en: 2d08d7d9b51db999
+  zh: 863c4a4dbc68f80c
+/deepseek-ai-dsh-experimental-speech-to-text-gemini/further-exploration:
+  en: 8247bf1f0f42d500
+  zh: f678f66eeae6f8d3
+/deepseek-ai-dsh-experimental-speech-to-text-gemini/model-experience:
+  en: 71548ab466d0cf38
+  zh: 471f3e6b398bdd12
+/deepseek-ai-dsh-experimental-speech-to-text-gemini/known-limitations-and-deferred-work:
+  en: 81db235f4e6abf31
+  zh: 1e1f6c420640830e
+/deepseek-ai-dsh-experimental-speech-to-text-gemini/dev-note:
+  en: ca850e84657ae1a3
+  zh: 3153e419dfbba27b

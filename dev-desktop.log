@@ -1,0 +1,118 @@
+native/system/packages/darwin-arm64      | [WARN] Unsupported platform: wanted: {"cpu":["arm64"],"os":["darwin"],"libc":["any"]} (current: {"os":"win32","cpu":"x64","libc":"unknown"})
+native/system/packages/darwin-x64        | [WARN] Unsupported platform: wanted: {"cpu":["x64"],"os":["darwin"],"libc":["any"]} (current: {"os":"win32","cpu":"x64","libc":"unknown"})
+native/system/packages/linux-arm64       | [WARN] Unsupported platform: wanted: {"cpu":["arm64"],"os":["linux"],"libc":["any"]} (current: {"os":"win32","cpu":"x64","libc":"unknown"})
+native/system/packages/linux-x64         | [WARN] Unsupported platform: wanted: {"cpu":["x64"],"os":["linux"],"libc":["any"]} (current: {"os":"win32","cpu":"x64","libc":"unknown"})
+$ tsx scripts/dev.ts
+$ tsx scripts/build.ts --scope artifacts
+run-gates: build:artifacts running 7 gate(s) with 7 worker(s) from 12 local default worker(s) of 12 CPU(s).
+run-gates: start native addon
+run-gates: PASS native addon (0.61s)
+run-gates: start host compiler
+run-gates: PASS host compiler (1.15s)
+run-gates: start Host bundle
+run-gates: PASS Host bundle (18.86s)
+run-gates: start Desktop bundle
+run-gates: PASS Desktop bundle (2.09s)
+run-gates: start client compiler
+run-gates: PASS client compiler (1.15s)
+run-gates: start Client bundle
+run-gates: PASS Client bundle (11.31s)
+run-gates: start Web build
+run-gates: PASS Web build (5.94s)
+
+run-gates: 7 passed, 0 failed, 0 skipped in 41.10s.
+build: recorded 327 client artifact(s) with 2 public value(s)
+$ tsc -b && pnpm run bundle
+$ tsdown --config-loader native
+ℹ tsdown v0.22.2 powered by rolldown v1.1.1
+ℹ config file: D:\Program\deepseek-harness-master\apps\desktop\tsdown.config.ts 
+ℹ entry: lib/types/command-manager-entry.js
+ℹ target: es2024
+ℹ tsconfig: tsconfig.json
+ℹ entry: lib/types/main.js
+ℹ target: es2024
+ℹ tsconfig: tsconfig.json
+ℹ entry: lib/types/preload-app.js
+ℹ target: es2024
+ℹ tsconfig: tsconfig.json
+ℹ entry: lib/types/preload-welcome.js
+ℹ target: es2024
+ℹ tsconfig: tsconfig.json
+ℹ entry: lib/types/preload-platform-account.js
+ℹ target: es2024
+ℹ tsconfig: tsconfig.json
+ℹ entry: lib/types/preload-mandatory.js
+ℹ target: es2024
+ℹ tsconfig: tsconfig.json
+ℹ entry: lib/types/preload-update-dialog.js
+ℹ target: es2024
+ℹ tsconfig: tsconfig.json
+ℹ Build start
+ℹ [CJS] lib\preload-mandatory.cjs  1.03 kB │ gzip: 0.47 kB
+ℹ [CJS] 1 files, total: 1.03 kB
+ℹ [CJS] lib\preload-platform-account.cjs  2.08 kB │ gzip: 0.90 kB
+ℹ [CJS] 1 files, total: 2.08 kB
+ℹ [CJS] lib\preload-update-dialog.cjs  1.11 kB │ gzip: 0.52 kB
+ℹ [CJS] 1 files, total: 1.11 kB
+ℹ [CJS] lib\preload-welcome.cjs  21.48 kB │ gzip: 6.88 kB
+ℹ [CJS] 1 files, total: 21.48 kB
+ℹ [CJS] lib\preload-app.cjs  41.08 kB │ gzip: 12.75 kB
+ℹ [CJS] 1 files, total: 41.08 kB
+✔ Build complete in 62ms
+✔ Build complete in 63ms
+✔ Build complete in 63ms
+✔ Build complete in 63ms
+✔ Build complete in 64ms
+ℹ [ESM] lib\command-manager-entry.js  23.00 kB │ gzip: 6.88 kB
+ℹ [ESM] 1 files, total: 23.00 kB
+✔ Build complete in 76ms
+ℹ Hint: consider adding deps.onlyBundle option to avoid unintended bundling of dependencies, or set deps.onlyBundle: false to disable this hint.
+See more at https://tsdown.dev/options/dependencies#deps-onlybundle
+Detected dependencies in bundle:
+- js-yaml
+ℹ [ESM] lib\main.js  517.13 kB │ gzip: 136.40 kB
+ℹ [ESM] 1 files, total: 517.13 kB
+✔ Build complete in 122ms
+vite v6.4.3 building for production...
+transforming...
+✓ 34 modules transformed.
+rendering chunks...
+computing gzip size...
+lib/welcome/Montserrat-OFL.txt          4.40 kB │ gzip:  1.98 kB
+lib/welcome/montserrat-light.woff2     61.55 kB
+lib/welcome/montserrat-regular.woff2   62.01 kB
+lib/welcome/montserrat-medium.woff2    62.15 kB
+lib/welcome/brand-font.css              0.55 kB │ gzip:  0.20 kB
+lib/welcome/welcome.css                37.44 kB │ gzip:  5.20 kB
+lib/welcome/welcome.js                154.71 kB │ gzip: 49.91 kB
+✓ built in 543ms
+No broken requirements found.
+Office runtime versions and document round trips passed.
+No broken requirements found.
+11.28.5
+desktop development: DSH_HOME=C:\Users\mm343\.dsh
+desktop development: userData=D:\Program\deepseek-harness-master\apps\desktop\.desktop-build\development\electron-user-data
+desktop development: inspectors main=9229, renderer=9222, host=9230
+
+Debugger listening on ws://127.0.0.1:9229/780bc5ac-7efe-4d82-b50a-d860b1efe5dc
+For help, see: https://nodejs.org/learn/getting-started/debugging
+
+DevTools listening on ws://127.0.0.1:9222/devtools/browser/0fa3e40d-a833-4a47-b9a7-2e9df6aa8314
+Error occurred in handler for 'dsh-desktop:mandatory-status': Error: No handler registered for 'dsh-desktop:mandatory-status'
+    at Session.<anonymous> (node:electron/js2c/browser_init:1:120085)
+    at Session.emit (node:events:514:28)
+[67144:1017/210522.666:INFO:CONSOLE:2] "%cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged.", source: node:electron/js2c/sandbox_bundle (2)
+dsh web: http://127.0.0.1:65494/?token=hlwnDCziQslpITV7c_q7nLpY9jaWK_KPGGx6zShmTdE
+[67144:1017/210530.775:INFO:CONSOLE:9624] "[deepseek-account] account read failed [object Object]", source: dsh-app://app/plugins/??@deepseek-ai/dsh-api-gateway/client.js,@deepseek-ai/dsh-client-ui-open-in-app/client.js,@deepseek-ai/dsh-api-job-controller/client.js,@deepseek-ai/dsh-api-terminal-controller/client.js,@deepseek-ai/dsh-api-workspace-files/client.js,@deepseek-ai/dsh-client-ui-settings-account/client.js,@deepseek-ai/dsh-client-hmr/client.js,@deepseek-ai/dsh-cordis-client-runner/client.js,@deepseek-ai/dsh-client-ui-theme/client.js,@deepseek-ai/dsh-client-locale/client.js,@deepseek-ai/dsh-client-shortcuts/client.js,@deepseek-ai/dsh-client-ui-shortcuts/client.js,@deepseek-ai/dsh-client-ui-layout/client.js,@deepseek-ai/dsh-client-ui-renderer/client.js,@deepseek-ai/dsh-client-ui-session/client.js,@deepseek-ai/dsh-client-resources/client.js,@deepseek-ai/dsh-client-ui-sidebar/client.js,@deepseek-ai/dsh-client-ui-sidebar-right/client.js,@deepseek-ai/dsh-client-ui-sidebar-documentpreview/client.js,@deepseek-ai/dsh-client-ui-sidebar-browser/client.js,@deepseek-ai/dsh-client-ui-sidebar-terminal/client.js,@deepseek-ai/dsh-client-ui-sidebar-files/client.js,@deepseek-ai/dsh-client-ui-settings/client.js,@deepseek-ai/dsh-client-ui-settings-general/client.js,@deepseek-ai/dsh-client-ui-settings-models/client.js,@deepseek-ai/dsh-client-ui-plugin-manager/client.js,@deepseek-ai/dsh-client-ui-settings-plugin-inventory/client.js,@deepseek-ai/dsh-client-ui-conversation/client.js,@deepseek-ai/dsh-client-ui-approval/client.js,@deepseek-ai/dsh-client-ui-chat/client.js,@deepseek-ai/dsh-client-ui-brand-official/client.js,@deepseek-ai/dsh-client-ui-attachment/client.js,@deepseek-ai/dsh-client-ui-tool/client.js,@deepseek-ai/dsh-client-ui-cordis/client.js,@deepseek-ai/dsh-client-ui-workspace/client.js,@deepseek-ai/dsh-client-ui-workflow-run/client.js,@deepseek-ai/dsh-client-ui-input-trigger/client.js,@deepseek-ai/dsh-client-ui-commands/client.js,@deepseek-ai/dsh-client-ui-skill/client.js,@deepseek-ai/dsh-client-ui-subagent/client.js,@deepseek-ai/dsh-client-ui-reference/client.js,@deepseek-ai/dsh-client-ui-secret-mask/client.js,@deepseek-ai/dsh-client-ui-jobs/client.js,@deepseek-ai/dsh-client-ui-schedule/client.js,@deepseek-ai/dsh-client-ui-goal/client.js,@deepseek-ai/dsh-client-ui-message-feedback/client.js,@deepseek-ai/dsh-client-ui-model-selection/client.js,@deepseek-ai/dsh-client-ui-deepseek-model-label-1017/client.js,@deepseek-ai/dsh-client-ui-permission-presets/client.js,@deepseek-ai/dsh-client-ui-agent-preset/client.js,@deepseek-ai/dsh-client-ui-settings-session-log/client.js,@deepseek-ai/dsh-client-ui-settings-plugins/client.js,@deepseek-ai/dsh-client-ui-settings-shell/client.js,@deepseek-ai/dsh-client-ui-settings-agent-loop/client.js,@deepseek-ai/dsh-client-ui-settings-subagent/client.js,@deepseek-ai/dsh-client-ui-settings-web-search/client.js,@deepseek-ai/dsh-client-ui-settings-media/client.js&rev=d6b376f962ba (9624)
+[llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+desktop development: --inspect=127.0.0.1:9229 --remote-debugging-port=9222 --user-data-dir=D:\Program\deepseek-harness-master\apps\desktop\.desktop-build\development\electron-user-data D:\Program\deepseek-harness-master\apps\desktop exited with 4294967295
+D:\Program\deepseek-harness-master\apps\desktop:
+[ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL] @deepseek-ai/dsh-desktop@0.2.1-rc.2 dev: `tsx scripts/dev.ts`
+Exit status 1
